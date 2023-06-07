@@ -6,6 +6,7 @@ on:
       - '*'
     branches:
       - main
+      - feat/303-push-to-docker-hub
 
 env:
   REGISTRY: ghcr.io
@@ -59,6 +60,7 @@ jobs:
       uses: docker/build-push-action@v3.2.0
       with:
         context: .
+        platforms: linux/amd64,linux/arm64, linux/arm64/v8
         push: true
         tags: "${{ steps.tag.outputs.tag_name }},${{ env.IMAGE_NAME }}:latest"
     - name: Get Release Version
