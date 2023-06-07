@@ -10,7 +10,7 @@ on:
 
 env:
   REGISTRY: ghcr.io
-  IMAGE_NAME: "ghcr.io/chroma-core/chroma"
+  IMAGE_NAME: "ghcr.io/buddhikajay/chroma"
 
 jobs:
   build-and-release:
