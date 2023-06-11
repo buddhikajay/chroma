@@ -5,7 +5,8 @@ on:
     tags:
       - "*"
     branches:
-      - "*"
+      - main
+      - feat/arm64-builds-v2
 
 env:
   GCR_URI: ghcr.io
