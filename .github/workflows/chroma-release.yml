@@ -6,7 +6,7 @@ on:
       - "*"
     branches:
       - main
-      - feat/303-push-to-docker-hub
+      - feat/arm64-builds
 
 env:
   REGISTRY: ghcr.io
